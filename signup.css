@@ -1,0 +1,186 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("img/light_mode_bg.png"); /* Path to your image */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+}
+/* Styling for the login box */
+.login-box {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  width: 400px;
+  height: 200px;
+  padding: 60px;
+  position: absolute;
+  border-radius: 20px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+  background: rgb(255, 255, 255);
+  display: flex; /* Add this line */
+  flex-direction: column; /* Add this line */
+  align-items: left; /* Add this line */
+  margin-top: 150px; /* Add this line */
+}
+
+.login-box h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: center;
+  margin-top: -40px;
+  /* color: #007bff; */
+}
+.login-box .user-box {
+  margin-bottom: 20px;
+  /* background-color: #f9f9f9; */
+}
+.login-box input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  /* text colour */
+  border: 1px solid #ccc;
+  border-radius: 20px; /* Rounded corners */
+  box-sizing: border-box; /* Makes sure padding doesn't affect the total width */
+  background-color: #f8f5f5;
+}
+
+.login-box button {
+  width: 30%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px; /* Rounded corners */
+  cursor: pointer;
+}
+.login-box button:hover {
+  opacity: 0.9;
+}
+
+.login-box input::placeholder {
+  color: #999; /* Placeholder text color */
+  /* background-color: #f20909; */
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 1.6rem; /* Footer height */
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #494444;
+}
+
+/* Dark mode specific styles */
+body.dark-mode {
+  background-image: url("img/dark_mode_bg.png"); /* Dark mode background image */
+  /* background-color: #333;  */
+  /* Dark background color */
+  color: #fff; /* White text color */
+}
+
+.dark-mode .login-box {
+  background: rgb(27, 26, 26); /* Black background for the sign-up box */
+}
+
+.dark-mode .login-box h2,
+.dark-mode .login-box input {
+  color: #fff; /* White text color */
+}
+.dark-mode .login-box input.border {
+  color: #fff;
+}
+
+.dark-mode .login-box .user-box {
+  color: #fff;
+}
+
+/* Style for the dark mode toggle button */
+
+body.dark-mode .login-box input {
+  border: 1px solid #ffffff; /* White border color in dark mode */
+}
+
+.dark-mode .login-box input::placeholder {
+  color: #fffefe; /* Placeholder text color in dark mode */
+}
+.dark-mode .login-box input {
+  background-color: rgb(27, 26, 26); /* Button background color in dark mode */
+}
+
+.toggle-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  border-radius: 0%;
+}
+
+.toggle {
+  width: 60px;
+  height: 30px;
+  border-radius: 14px;
+  background-color: #160101;
+  position: relative;
+  /* cursor: pointer; */
+}
+
+.toggle::before {
+  width: 60px;
+  height: 30px;
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: #fff;
+  transition: transform 0.3s;
+}
+
+.dark-mode .toggle::before {
+  transform: translateX(30px);
+  background-color: #333;
+}
+.dark-mode .toggle {
+  background-color: #fff;
+}
+
+.dark-mode footer {
+  color: #ece7e7;
+}
+
+/* Header styles */
+.header {
+  position: absolute;
+  top: 0;
+  display: flex;
+  align-items: center;
+  background-color: #f8f5f5; /* Light grey background */
+  width: 1370px;
+  height: 40px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+.header img {
+  height: 50px; /* Adjust based on your logo's size */
+  margin-right: 20px;
+}
+.header .company-name {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333; /* Dark grey text */
+}
+
+.toggle-container {
+  position: absolute; /* or 'fixed' if you want it to stay in place on scroll */
+  right: 0;
+  top: -5px;
+  padding: 10px; /* Adjust padding as needed */
+}

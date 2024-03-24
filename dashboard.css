@@ -1,0 +1,245 @@
+@import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:300);
+.fr {
+  position: relative;
+  display: table-cell;
+  width: 60px;
+  height: 36px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 20px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #000000;
+}
+
+/* Style the header with a grey background and some padding */
+.header {
+  overflow: hidden;
+  background-color: #000000;
+  height: 40px;
+}
+
+/* Style the header links */
+.header a {
+  float: left;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 8px;
+  text-decoration: none;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+.header a.logo {
+  font-size: 15px;
+  font-weight: light;
+}
+
+/* Float the link section to the right */
+.header-right {
+  float: right;
+}
+
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+}
+
+.main-menu:hover,
+nav.main-menu.expanded {
+  width: 200px;
+  overflow: visible;
+}
+
+.main-menu {
+  background: #1b1616;
+  border-radius: 17px;
+  position: absolute;
+  top: 65px;
+  height: 500px;
+  left: 30;
+  width: 70px;
+  overflow: hidden;
+  -webkit-transition: width 0.15s ease-in-out; /* Adjusted duration and added ease-in-out */
+  transition: width 0.15s ease-in-out; /* Adjusted duration and added ease-in-out */
+  -webkit-transform: translateZ(0) scale(1, 1);
+  transform: translateZ(0) scale(1, 1);
+}
+
+.main-menu > ul {
+  padding-top: 80px;
+}
+
+.main-menu li {
+  display: block;
+  width: 200px;
+}
+
+.main-menu li > a {
+  display: table;
+  color: #ffffff;
+  font-family: arial;
+  font-size: 14px;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+.main-menu li > a > i {
+  left: 9px;
+}
+
+.main-menu .nav-text {
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+  width: 190px;
+  font-family: "Titillium Web", sans-serif;
+  left: 21.5px;
+}
+
+nav ul,
+nav li {
+  outline: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.main-menu li:hover > a,
+nav.main-menu li.active > a,
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus,
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus,
+.no-touch .dashboard-page nav.dashboard-menu ul li:hover a,
+.dashboard-page nav.dashboard-menu ul li.active a {
+  color: #ffea00; /* This is your existing color change */
+}
+
+@font-face {
+  font-family: "Titillium Web";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Titillium WebLight"), local("TitilliumWeb-Light"),
+    url(http://themes.googleusercontent.com/static/fonts/titilliumweb/v2/anMUvcNT0H1YN4FII8wpr24bNCNEoFTpS2BTjF6FB5E.woff)
+      format("woff");
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+}
+
+.container {
+  position: absolute;
+  top: 0;
+}
+.container1 {
+  position: absolute;
+  left: 110px;
+  top: 65px;
+  /* background: blue; */
+  width: 300px;
+  height: 150px;
+  border-radius: 20px;
+  z-index: -1;
+  text-align: center;
+  font-size: 50px;
+  background: linear-gradient(135deg, #5e80ca, #92a9d1);
+}
+
+.container2 {
+  position: absolute;
+  display: flex;
+  left: 430px;
+  top: 65px;
+  width: 550px;
+  height: 150px;
+  border-radius: 20px;
+  z-index: -1;
+  background: #222220;
+}
+
+.container3 {
+  position: absolute;
+  left: 110px;
+  top: 235px;
+  width: 410px;
+  height: 120px;
+  border-radius: 20px;
+  z-index: -1;
+  text-align: center;
+  background: #222220;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container4 {
+  position: absolute;
+  left: 540px;
+  top: 235px;
+  /* background: rgb(190, 190, 9); */
+  width: 200px;
+  height: 330px;
+  border-radius: 20px;
+  z-index: -1;
+  text-align: center;
+  font-size: 50px;
+  background: #222220;
+}
+
+.container5 {
+  position: absolute;
+  left: 760px;
+  top: 235px;
+  /* background: green; */
+  width: 220px;
+  height: 200px;
+  border-radius: 20px;
+  z-index: -1;
+  text-align: center;
+  font-size: 50px;
+  background: #cfee2e;
+}
+
+.container6 {
+  position: absolute;
+  left: 110px;
+  top: 375px;
+  /* background: pink; */
+  width: 410px;
+  height: 190px;
+  border-radius: 20px;
+  z-index: -1;
+  text-align: center;
+  font-size: 50px;
+  background: #222220;
+}
+
+.container7 {
+  position: absolute;
+  left: 760px;
+  top: 455px;
+  /* background: blue; */
+  width: 220px;
+  height: 110px;
+  border-radius: 20px;
+  z-index: -1;
+  text-align: center;
+  font-size: 50px;
+  background: linear-gradient(135deg, #5e80ca, #92a9d1);
+}
